@@ -1,0 +1,622 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+:root{
+    --color1: rgb(255, 115, 21);
+    --color2: rgba(255, 114, 20, 55%);
+    --color3: #3a3535;
+    --relleno: #f5f2f2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+header{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/home\ central.jpg")
+}
+.conntenido-fijo{
+    width: 100%;
+    height: 85px;
+    background-color: red;
+}
+.contenido-central{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    text-align: center;
+}
+h1,h2,h3,.boton{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+header h1{
+    color: white;
+    font-size: 2.5rem;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    padding: 0;
+    color: black;
+    font-weight: bold;
+}
+.container-fluid{
+    background-color: var(--color2);
+}
+.logo{
+    width: 30vw;
+}
+.boton{
+    padding: 0.4rem;
+    font-size: 1.2rem;
+    border-radius: 0.8rem;
+    background-color: var(--color1);
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+.boton:hover, .redes i:hover{
+    background-color: var(--color3);
+    color: var(--color1);
+}
+.boton{
+    transition: color 0.2s ease-in 0.1s;
+}
+.nosotros, .clase-gratis{
+    background-color: var(--relleno);
+}
+.contenedor, .clases-card, .plan-card, .cgratis-card, .nosotros-card, .blog-cards{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    text-align: justify;
+}
+.clases-card .boton, .cgratis-card .boton, .nosotros-card .boton{
+    align-self: flex-end;
+}
+.plan-card{
+    width: 90%;
+    height: 30vh;
+    margin-top: 0.5rem;
+}
+.plan-card img{
+    width: 100%;
+    height: 100%;
+}
+.cgratis-card, .nosotros-card, .blog-cards{
+    height: 40%;
+}
+.cgratis-card img, .nosotros-card img, .blog-cards img {
+    width: 100%;
+    height: 100%;
+}
+.cgratis-card, .nosotros-card{
+    background-color: var(--relleno);
+}
+.banner{
+    width: 100%;
+    height: 30%;
+    color: white;
+    background-color: var(--color3);
+    padding: 1rem 0;
+}
+.banner h2{
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+.h-servicios{
+    background-image: url("../images/servicios\ central.jpg");
+    background-size: cover;
+    background-position:left;
+    background-repeat: no-repeat;
+}
+iframe{
+    width: 100%;
+}
+.plan-card{
+    width: 100%;
+    height: auto;
+    background-image: none;
+    border: 1px solid black;
+    background-color: var(--relleno);
+    box-shadow: 4px 4px 4px var(--color3);
+}
+.inicial{
+    height: 30vh;
+    background-image: url("../images/clase\ 1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.intermedio{
+    height: 30vh;
+    background-image: url("../images/clase\ 2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.avanzado{
+    height: 30vh;
+    background-image: url("../images/clase\ 3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.personalizado{
+    height: 30vh;
+    background-image: url("../images/clase\ 4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.b-servicios{
+    display: flex;
+    flex-direction: column;
+}
+.b-servicios .boton{
+    margin: 0.5rem auto;
+    text-align: center;
+    width: 75%;
+}
+.h-nosotros{
+    background-image: url("../images/nosotros\ central.jpg");
+    background-size:cover;
+    background-position:right;
+    background-repeat: no-repeat;
+}
+.text-nosotros{
+    width: 90%;
+}
+
+.staff-card{
+    width: 100%;
+    display: grid;
+    grid-gap: 0.5rem;
+    border: 1px solid black;
+    border-radius: 10%;
+    box-shadow: 4px 4px 4px var(--color3);
+    align-content: center;
+    align-items: center;
+    grid-template-rows:40vh;
+    grid-template-columns: 0.7fr 1.3fr;
+    padding: 0.2rem;
+    margin-bottom: 1rem;
+}
+.staff-card p, .articulo-card p{
+    font-size: 0.7rem;
+    padding: 0.5rem;
+}
+
+.img-card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 70%;
+    margin: auto;
+}
+.h-blog{
+    background-image: url("../images/blog\ central.jpg");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.articulo-card{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    box-shadow: 4px 4px 4px var(--color3);
+    margin-bottom: 1rem
+}
+.articulo-card:nth-child(2),.articulo-card:nth-child(3){
+    background-color: var(--relleno);
+}
+.articulo-card img{
+    width: 100%;
+    height: 100%;
+}
+.cont-articulo .boton{
+    width: 40%;
+    margin-bottom: 0.5rem;
+}
+.h-contacto{
+    background-image: url("../images/contcato\ central.jpg");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+form{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid var(--color3);
+    border-radius: 5%;
+    padding: 1rem;
+    background-color: var(--relleno);
+}
+form .boton{
+    width: 30%;
+    margin: 1rem;
+    display: block;
+}
+.envio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+textarea{
+    resize: none;
+}
+
+input, textarea, label {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+}
+.suscripcion {
+    background-color: #3a3535;
+    padding: 0;
+    color: white;
+}
+.faqs{
+    width: 90%;
+    margin: auto;
+}
+.faqs p{
+    font-size: 0.8rem;
+    margin: auto;
+}
+.footer{
+    width: 100%;
+    height: 30%;
+    background-color: var(--relleno);
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0.5rem 0;
+    align-items: center;
+    justify-content: center;
+}
+.redes{
+    width: 80%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.redes a{
+    text-decoration: none;
+    width: 70%;
+    height: 100%;
+    text-align: center;
+}
+.redes i{
+    color: var(--color1);
+    width: 70%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2.5rem;
+}
+.footer p{
+    font-weight: bold;
+    padding-top: 0.5rem;
+    font-size: 0.8rem;
+}
+.carousel-item{
+    width: 100%;
+}
+.mensaje_error{
+    width: 80%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    color: red;
+    font-weight: bold;
+}
+
+
+/*Puntos de corte*/
+@media screen and (min-width:760px) and (max-width:991px){
+    header{
+        height: 50vh;
+    }
+    .contenedor{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .clases-card, .plan-card{
+        width: 40%;
+        margin: 1rem;
+    }
+    .plan-card{
+        height: 20vh;
+    }
+    .cgratis-card, .nosotros-card, .art-blog, .s-card {
+        width: 45%;
+        margin: 0.5rem;
+    }
+    .blog-cards{
+        flex-direction: row;
+    }
+    .banner h2{
+        font-size: 2rem;
+        padding: 2rem;
+    }
+    #carouselExampleDark{
+        width: 50%;
+        padding: 1rem 2rem;
+    }
+    .redes{
+        width: 60%
+    }
+    .redes a i{
+        width: 50%;
+    }
+    .plang{
+        height: 45vh;
+    }
+    .staff{
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .s-card{
+       grid-template-rows: 1fr; 
+    }
+    .articulo-card{
+        width: 95%;
+        flex-direction: row;
+    }
+    .cont-articulo{
+        width: 80%;
+        padding: 0.2rem;
+    }
+    .cont-articulo .boton{
+        width: 40%;
+        margin: 1rem;
+    }
+    .articulo-card img{
+        width: 90%;
+        height: 50%;
+        margin: 25% auto;
+    }
+    .mensaje, .faqs {
+        max-width: 60%;
+        margin: auto;
+    }
+    
+}
+@media screen and (min-width:992px) and (max-width:1190px){
+    header{
+        height: 40vh;
+    }
+    .container-fluid{
+        padding-left: 15%;
+    }
+    .contenedor{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .clases-card, .plan-card{
+        width: 45%;
+        margin: 1rem;
+    }
+    .plan-card{
+        height: 20vh;
+    }
+    .plan-card .boton{
+        font-size: 2rem;
+    }
+    .cgratis-card, .nosotros-card, .art-blog, .s-card {
+        width: 45%;
+        margin: 0.5rem;
+    }
+    .blog-cards{
+        flex-direction: row;
+    }
+    .banner h2{
+        font-size: 2.5rem;
+        padding: 2rem;
+    }
+    #carouselExampleDark{
+        width: 50%;
+        padding: 1rem 3rem;
+    }
+    .redes{
+        width: 50%
+    }
+    .redes a i{
+        width: 90%;
+    }   
+    footer p{
+        font-size: 1rem;
+    }
+    .plang{
+        height: 42vh;
+    }
+    .banner .boton{
+        width: 45%;
+        font-size: 1.5rem;
+    }
+    .staff{
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .text-nosotros{
+        width: 50%;
+        margin: 0.5rem;
+    }
+    .s-card{
+       grid-template-rows: 1fr; 
+    }
+    .articulo-card{
+        width: 90%;
+        flex-direction: row;
+    }
+    .cont-articulo{
+        width: 80%;
+        padding: 0.2rem;
+        font-size: 1.5rem;
+    }
+    .cont-articulo .boton{
+        width: 40%;
+        margin: 1rem;
+    }
+    .articulo-card img{
+        width: 90%;
+        height: 60%;
+        margin: 10% auto
+    }
+    .mensaje{
+        grid-area: uno;
+    }
+    .faqs{
+        grid-area: dos;
+    }
+    .suscripcion{
+        grid-area: tres;
+        padding: 1rem;
+    }
+    .mensaje, .faqs {
+        width: 90%;
+        max-width: 550px;
+        margin: auto;
+    }
+    main{
+        display: grid;
+        grid-template-areas: "uno dos"
+            "tres tres";
+    }
+   
+}
+@media screen and (min-width:1200px){
+    header{
+        height: 80vh;
+        max-height: 580px;
+    }
+    .logo{
+        width: 20vh;
+    }
+    .container-fluid{
+        padding-left: 25vw;
+    }
+    .contenedor{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .clases-card, .plan-card{
+        width: 45%;
+        max-width: 650px;
+        margin: 1rem;
+    }
+    .plan-card{
+        height: 40vh;
+    }
+    .plan-card .boton{
+        font-size: 1.5rem;
+    }
+    .cgratis-card, .nosotros-card, .art-blog, .s-card {
+        width: 45%;
+        max-width: 650px;
+        margin: 0.5rem;
+    }
+    .blog-cards{
+        flex-direction: row;
+    }
+    .banner h2{
+        font-size: 2rem;
+        padding: 1.5rem;
+    }
+    #carouselExampleDark{
+        width: 35%;
+        max-width: 500px;
+        padding: 1rem 3rem;
+    }
+    .redes{
+        width: 40%
+    }
+    .redes a i{
+        width: 90%;
+    }   
+    footer p{
+        font-size: 1rem;
+    }
+    .plang{
+        height: 45vh;
+        max-width: 500px;
+        font-size: 0.8rem;}
+    .plang img{
+        width: 60%;
+        height: 50%;
+    }
+    .banner .boton{
+        width: 30%;
+        font-size: 1.5rem;
+    }
+    .staff{
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0.5rem;
+    }
+    .text-nosotros{
+        width: 45%;
+        margin: 1rem;
+    }
+    .s-card{
+       grid-template-rows: 1fr; 
+    }
+    .articulo-card{
+        width: 70%;
+        flex-direction: row;
+    }
+    .cont-articulo{
+        width: 80%;
+        padding: 0.2rem;
+        font-size: 1.5rem;
+    }
+    .cont-articulo .boton{
+        width: 30%;
+        margin: 1rem;
+    }
+    .articulo-card img{
+        width: 90%;
+        height: 70%;
+        margin: 5% auto
+    }
+    .mensaje{
+        grid-area: uno;
+    }
+    .faqs{
+        grid-area: dos;
+    }
+    .suscripcion{
+        grid-area: tres;
+        padding: 1rem;
+    }
+    .mensaje, .faqs {
+        width: 90%;
+        max-width: 550px;
+        margin: auto;
+    }
+    .area-gr{
+        display: grid;
+        grid-template-areas: "uno dos"
+            "tres tres";
+    }
+    iframe{
+        width: 80%;
+    }
+}
